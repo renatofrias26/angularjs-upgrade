@@ -8,6 +8,12 @@ framework and a bunch of development and testing tools for instant web developme
 
 The seed app doesn't do much, just shows how to wire two controllers and views together.
 
+## Angular 19 Upgrade
+
+A minimal Angular 19 skeleton is available in `ng19/` which now includes the
+AngularJS sources via `@angular/upgrade`. Install the dependencies in that
+directory with `npm install` to build the hybrid project.
+
 
 ## Getting Started
 
