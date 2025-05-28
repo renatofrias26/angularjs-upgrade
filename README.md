@@ -8,6 +8,12 @@ framework and a bunch of development and testing tools for instant web developme
 
 The seed app doesn't do much, just shows how to wire two controllers and views together.
 
+## Angular 19 Upgrade
+
+A hybrid Angular 19 project lives in `ng19/`. It bootstraps the existing AngularJS
+application using `UpgradeModule`. Because this environment is offline,
+dependencies are not installed. Run `npm install` in `ng19/` after cloning.
+
 
 ## Getting Started
 
