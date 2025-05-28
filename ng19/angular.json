@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "ng-upgrade": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "tsconfig.json",
+            "polyfills": [],
+            "assets": [
+              "src/legacy"
+            ],
+            "styles": [
+              "src/legacy/css/app.css"
+            ],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "options": {
+            "browserTarget": "ng-upgrade:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-upgrade"
+}
