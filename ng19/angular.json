@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "ng-upgrade": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "tsconfig.json",
+            "polyfills": [],
+            "assets": [
+              "src/bower_components",
+              "src/components",
+              "src/content",
+              "src/css",
+              "src/detail",
+              "src/model",
+              "src/scss"
+            ],
+            "styles": [],
+            "scripts": [
+              "src/bower_components/angular/angular.js",
+              "src/bower_components/angular-route/angular-route.js",
+              "src/app.js",
+              "src/content/grid.js",
+              "src/detail/detail.js",
+              "src/components/sidebar/sidebar.js"
+            ]
+          }
+        },
+        "serve": {
+          "options": {
+            "browserTarget": "ng-upgrade:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-upgrade"
+}
